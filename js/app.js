@@ -8,3 +8,13 @@ $('#flashMessage')
   .delay(3000)
   .slideUp(2000);
 
+const title = "my first blog post";
+const content = "this is my <strong>first</strong> post";
+
+//puts the title in the ID listed
+$('#blogTitlePreview')
+  .text(title);
+
+  //puts the content in the ID listed. 
+$('#blogContentPreview')
+  .html(content);
