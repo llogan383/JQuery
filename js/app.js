@@ -3,4 +3,9 @@
 // box.style.display = 'none';
 
 //hide the green box w Jquery
-jQuery('.box').hide();
+//jQuery('.box').hide();
+
+//Use the $ instead of the word JQUERY
+$('.box').hide();
+
+$('.box').show();
