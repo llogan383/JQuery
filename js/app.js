@@ -11,6 +11,11 @@ var box = document.querySelector('.box');
 // $('.box').show();
 
 
-box.addEventListener('click', function() {
-  alert('You clicked the button!');
-});
+// box.addEventListener('click', function() {
+//   alert('You clicked the button!');
+// });
+
+// Same as above w Jquery
+$('.box').click(function() {
+  alert('You clicked the button w Jquery!');
+} );
