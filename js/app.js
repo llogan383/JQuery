@@ -20,9 +20,9 @@ $('#previewButton').click(function(){
   $('#blogContentPreview')
     .html(content);
 
-    $('#flashMessage')
-  .hide()
-  .slideDown(2000)
-  .delay(3000)
-  .slideUp(2000);
+  $('#flashMessage')
+    .hide()
+    .slideDown(2000)
+    .delay(3000)
+    .slideUp(2000);
 });
