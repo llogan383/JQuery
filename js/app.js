@@ -1,3 +1,4 @@
 $('#flashMessage').hide();
-$('#flashMessage').fadeIn(2000);
+$('#flashMessage').slideDown(2000);
+$('#flashMessage').delay(3000);
 $('#flashMessage').slideUp(2000);
