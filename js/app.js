@@ -7,6 +7,10 @@
 // const title = "my first blog post";
 // const content = "this is my <strong>first</strong> post";
 
+//Hide the message on page load;
+$('#flashMessage')
+.hide();
+
 //Add an event listener for the button 
 $('#previewButton').click(function(){
   //store the ID value in 'title; using the VAL method,
@@ -20,8 +24,8 @@ $('#previewButton').click(function(){
   $('#blogContentPreview')
     .html(content);
 
+    //display message when content is saved. 
   $('#flashMessage')
-    .hide()
     .slideDown(2000)
     .delay(3000)
     .slideUp(2000);
