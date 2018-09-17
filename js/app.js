@@ -1,11 +1,12 @@
 //below: the code basically says, identify this class (spoiler)
 //then, if there is an event (click) on the element (button),
 //then do this code. 
-$('.spoiler').on('click', 'button', function(){
-  $('.spoiler span')
-    .fadeIn(2000);
+$('.spoiler').on('click', 'button', function(event){
+  console.log(event);
+  // $('.spoiler span')
+    // .fadeIn(2000);
   $('.spoiler button')
-    .hide();
+    $(event.target).hide();
 } );
 
 //show button if JS is available
