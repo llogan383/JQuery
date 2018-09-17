@@ -2,10 +2,10 @@
 //then, if there is an event (click) on the element (button),
 //then do this code. 
 $('.spoiler').on('click', 'button', function(event){
-  console.log(event);
-  // $('.spoiler span')
-    // .fadeIn(2000);
-  $('.spoiler button')
+  console.log(event.target);
+  //tells jquery, whatever button was clicked,
+  //go to the previous element using the prev() function
+  $(event.target).prev().show();
     $(event.target).hide();
 } );
 
