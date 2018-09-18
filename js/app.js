@@ -5,8 +5,8 @@ $('.spoiler').on('click', 'button', function(event){
   console.log(event.target);
   //tells jquery, whatever button was clicked,
   //go to the previous element using the prev() function
-  $(event.target).prev().show();
-    $(event.target).hide();
+  $(this).prev().show();
+    $(this).hide();
 } );
 
 //show button if JS is available
