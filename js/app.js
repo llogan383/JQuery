@@ -7,3 +7,6 @@ const $secureLinks = $('a[href^="https://"]');
 const $pdfs = $('a[href$=".pdf"]');
 
 $secureLinks.attr('target', '_blank');
+
+//cuase .pdf files to be donwloaded when clicked; DOESNT WORK IN CHROME
+$pdfs.attr( 'download', true );
