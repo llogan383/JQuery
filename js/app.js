@@ -28,3 +28,14 @@ $pdfs.on('click', function(event){
     } 
 });
 $('#links').append($pdfCheckbox);
+
+//loops through each link in the page
+//each takes two arguments
+
+//for each anchor, get their index, nd select each anchor w jquery
+//and get it's href attribute. Put it in the console. 
+$('a').each(function(this){
+
+    const url = $(this).attr('href');
+    $(this).parent().append(`(${url})`);
+});
